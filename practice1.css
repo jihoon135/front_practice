@@ -1,34 +1,3 @@
-  body {
-    color: #fff;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-  }
-
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;   
-    height: 75px;
-    padding: 1rem;
-    color: white;
-    background: rgba(255, 255, 255, 0.6);
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
-
-h1 {
-  font-size:50px; 
-  font-family:'Times New Roman'; 
-  color:black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
-  }
-
 /*오른쪽 하단 밝기 변경 버튼 코드 시작*/
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -56,4 +25,38 @@ h1 {
   --bs-btn-active-bg: #5a23c8;
   --bs-btn-active-border-color: #5a23c8;
 }
+
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body{
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-45deg, #a739a4, rgb(140, 77, 170), #046115, #23d5ab);
+  background-size: 400% 400%;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.featurette-divider{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+
 /*오른쪽 하단 밝기 변경 버튼 코드 종료*/
